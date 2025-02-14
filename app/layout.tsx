@@ -3,17 +3,14 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import { Poppins } from 'next/font/google'
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+const poppins = Poppins({
+  subsets: ['latin'], 
+  weight: ['400', '600'], // Choose weights you need
+  style: ['normal', 'italic'], // Optional styles
+  display: 'swap'
+})
 
 export const metadata: Metadata = {
   title: "Vikram's Portfolio",
@@ -27,9 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={poppins.className}>
         <Navbar/>
         {children}
         <Footer/>

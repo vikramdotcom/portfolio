@@ -7,13 +7,13 @@ import { Button } from "@/components/ui/button"
 
 export const HeroSection = () => {
   return (
-    <section className="relative py-20 min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 to-black text-white px-4 sm:px-6 lg:px-8">
+    <section className="relative py-20 min-h-screen flex items-center justify-center overflow-hidden bg-zinc-900 text-white px-4 sm:px-6 lg:px-8">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-[url('/images/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
       </div>
 
       <div className="container mx-auto z-10">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-20">
           <motion.div
             className="lg:w-1/2"
             initial={{ opacity: 0, y: 20 }}
@@ -21,7 +21,7 @@ export const HeroSection = () => {
             transition={{ duration: 0.8 }}
           >
             <motion.h1
-              className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500"
+              className="text-5xl leading-snug sm:text-5xl md:text-6xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -43,7 +43,7 @@ export const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              <Button className="bg-purple-600 hover:bg-purple-500 text-white rounded-full px-8 py-3 text-lg font-semibold transition-all duration-300 transform hover:scale-105">
+              <Button className="bg-purple-600 hover:bg-purple-500 text-white rounded-full px-8 py-6 text-lg font-semibold transition-all duration-300 transform hover:scale-105">
                 <a href="/images/ORG-Resume.pdf" target="_blank" rel="noopener noreferrer">
                   Download CV
                 </a>
@@ -83,7 +83,7 @@ export const HeroSection = () => {
                 alt="Vikram Singh"
                 layout="fill"
                 objectFit="cover"
-                className="rounded-full border-4 border-purple-600 shadow-lg"
+                className="rounded-full border-4 border-purple-600 shadow-2xl"
               />
             </div>
           </motion.div>

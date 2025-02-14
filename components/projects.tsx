@@ -104,7 +104,7 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({ project, i
 
 const ProjectsSection: React.FC = () => {
   return (
-    <section className="bg-gradient-to-br from-gray-900 to-black py-20">
+    <section className="bg-zinc-900 py-20">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
