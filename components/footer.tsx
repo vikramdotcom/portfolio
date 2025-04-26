@@ -24,7 +24,7 @@ const Footer = () => {
             <FaLinkedin />
           </a>
           <a
-            href="https://twitter.com/#"
+            href="https://x.com/vkram90"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-purple-400 transition text-2xl"
