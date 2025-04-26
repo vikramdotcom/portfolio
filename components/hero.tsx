@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { motion } from "framer-motion"
-import { FaGithubAlt, FaLinkedin } from "react-icons/fa6"
+import { FaGithubAlt, FaLinkedin , FaTwitter} from "react-icons/fa6"
 import { Button } from "@/components/ui/button"
 
 export const HeroSection = () => {
@@ -44,7 +44,7 @@ export const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.6 }}
             >
               <Button className="bg-purple-600 hover:bg-purple-500 text-white rounded-full px-8 py-6 text-lg font-semibold transition-all duration-300 transform hover:scale-105">
-                <a href="/images/ORG-Resume.pdf" target="_blank" rel="noopener noreferrer">
+                <a href="/images/resume.pdf" target="_blank" rel="noopener noreferrer">
                   Download CV
                 </a>
               </Button>
@@ -57,6 +57,17 @@ export const HeroSection = () => {
                 className="bg-purple-600 text-white p-3 rounded-full"
               >
                 <FaGithubAlt size={24} />
+              </motion.a>
+
+              <motion.a
+                href="https://x.com/vkram90"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className="bg-purple-600 text-white p-3 rounded-full"
+              >
+                <FaTwitter size={24} />
               </motion.a>
               <motion.a
                 href="https://www.linkedin.com/in/vikram-s-404839217/"
