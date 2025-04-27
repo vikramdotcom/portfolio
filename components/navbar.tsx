@@ -37,7 +37,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <motion.h1 className="text-3xl font-bold font-Poppins" whileHover={{ scale: 1.05 }}>
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#8AF9FF] to-[#FF74FD]">
-              <Link href="/" className="hover:text-[#FF74FD] transition-colors duration-300 ease-in-out">
+              <Link href="/" className="transition-colors duration-300 ease-in-out">
               Vikram S.
               </Link>
             </span>
