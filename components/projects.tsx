@@ -24,8 +24,35 @@ interface Project {
 }
 
 const projects: Project[] = [
+
   {
     id: "1",
+    title: "Avion Ecommerce Marketplace",
+    subtitle: "Your One-Stop Shop for Everything!",
+    description:
+      "A modern e-commerce platform that connects buyers and sellers seamlessly. Shop, sell, and explore with ease!",
+    longDescription:
+      "Avion Ecommerce Marketplace is a cutting-edge e-commerce platform designed to provide a seamless shopping experience. With a user-friendly interface and powerful features, it connects buyers and sellers effortlessly. Whether you're looking for the latest gadgets, fashion, or home essentials, our marketplace has it all.",
+    image: "/images/avion.png",
+    technologies: ["Nexjs", "TypeScript", "Tailwind CSS", "react.js"],
+    features: [
+      "User authentication and profiles",
+      "Product search and filtering",
+      "Shopping cart and checkout process",
+      "Order history and tracking",
+      "Responsive design for all devices",
+      "Admin dashboard for sellers",
+    ],
+    githubLink: "https://github.com/vikram-singh9/Quater02_Full-Stack_Marketplace_Hackathon",
+    liveLink: "https://hackathone-quater-2.vercel.app/",
+    date: "January 2024",
+    duration: "1 week",
+    role: "Full Stack Developer",
+  },
+
+
+  {
+    id: "2",
     title: "TODO-APP",
     subtitle: "Now Make Your Daily Todos Easy!",
     description:
@@ -48,7 +75,7 @@ const projects: Project[] = [
     role: "Frontend Developer",
   },
   {
-    id: "2",
+    id: "3",
     title: "COUNTDOWN-TIMER",
     subtitle: "Measure your daily activities!",
     description:
@@ -71,7 +98,7 @@ const projects: Project[] = [
     role: "Full-Stack Developer",
   },
   {
-    id: "3",
+    id: "4",
     title: "DIGITAL CLOCK",
     subtitle: "A Modern Digital Clock",
     description: "A digital clock that keeps you in sync with every moment, designed for accuracy and style.",
@@ -93,7 +120,7 @@ const projects: Project[] = [
     role: "Frontend Developer",
   },
   {
-    id: "4",
+    id: "5",
     title: "TIC-TAC-TOE",
     subtitle: "A Modern Twist on Classic Fun!",
     description: "Challenge yourself in this sleek, intuitive Tic Tac Toe game with smooth gameplay and strategic fun!",
@@ -113,6 +140,148 @@ const projects: Project[] = [
     date: "April 2024",
     duration: "2 weeks",
     role: "Game Developer",
+  },
+
+
+  {
+    id: "6",
+    title: "Dynamic Resume Builder",
+    subtitle: "Create Your Perfect Resume!",
+    description: "A dynamic resume builder that helps you create a professional resume in minutes. Customize and download easily!",
+    longDescription:
+      "Our Dynamic Resume Builder is designed to simplify the resume creation process. With a user-friendly interface and customizable templates, you can create a professional resume that stands out. Whether you're a recent graduate or an experienced professional, our tool helps you showcase your skills and experience effectively.",
+    image: "/images/rb.png",
+    technologies: ["React", "TypeScript","Nextjs", "CSS Modules", "tailwind"],
+    features: [
+      "Customizable templates",
+      "Real-time preview",
+    ],
+    githubLink: "https://github.com/vikram-singh9/Dynamic_Resume_Builder_Milestone02",
+    liveLink: "https://dynamic-resume-builder-02.vercel.app/",
+    date: "April 2023",
+    duration: "2 weeks",
+    role: "Frontend Developer",
+  },
+
+
+  {
+    id: "7",
+    title: "Book Store",
+    subtitle: "Your Gateway to Knowledge!",
+    description: "A modern book store app that lets you explore, review, and purchase books with ease. Discover your next read!",
+    longDescription:
+      "Our Book Store app is designed for book lovers. With a sleek interface and powerful search features, you can easily find and explore your favorite books. Whether you're looking for the latest bestsellers or classic literature, our app provides a seamless shopping experience.",
+    image: "/images/bs.png",
+    technologies: ["React", "TypeScript", "nextjs", "CSS Modules", "tailwind"],
+    features: [
+      "User authentication",
+      "Book reviews and ratings",
+      "Wishlist and favorites",
+      "Order history and tracking",
+      "Responsive design for all devices",
+    ],
+    githubLink: "https://github.com/vikram-singh9/Assignment_Books_Store_Crud_Operations",
+    liveLink: "https://assignment-books-store-crud-operations.vercel.app/",
+    date: "May 2024",
+    duration: "2 weeks",
+    role: "Frontend Developer",
+  },
+
+
+  {
+    id: "8",
+    title: "Simple Audio Player",
+    subtitle: "Your Music, Your Way!",
+    description: "A simple audio player that lets you play, pause, and skip tracks effortlessly. Enjoy your music collection!",
+    longDescription:
+      " Our Simple Audio Player is designed for music lovers. With a clean interface and easy-to-use controls, you can enjoy your favorite tracks without any hassle. Whether you're at home or on the go, our player provides a seamless listening experience.",
+    image: "/images/aplayer.png",
+    technologies: ["Nextjs", "TypeScript", "CSS Modules", "Audio API"],
+    features: [
+      "Play, pause, and skip tracks",
+      "Volume control and mute options",
+      "Playlist management",
+      "Responsive design for all devices",
+      "Customizable themes",
+    ],
+    githubLink: "https://github.com/vikram-singh9/audio_player_app_next15",
+    liveLink: "https://audio-player-app-next15.vercel.app/",
+    date: "Sept 2024",
+    duration: "1 day",
+    role: "Frontend Developer",
+  },
+
+
+  {
+    id: "9",
+    title: "Calculator",
+    subtitle: "Your Personal Math Assistant!",
+    description: "A sleek calculator app that makes calculations easy and fun. Perform basic and advanced calculations effortlessly!",
+    longDescription:
+      "Our Calculator app is designed for everyone. With a user-friendly interface and powerful features, you can perform basic and advanced calculations with ease. Whether you're a student, a professional, or just need to crunch some numbers, our app provides the tools you need.",
+    image: "/images/capp.png",
+    technologies: ["TypeScript","nextjs", "CSS Modules", "tailwind"],
+    features: [
+      "Basic and advanced calculations",
+      "History of calculations",
+      "Customizable themes",
+      "Responsive design for all devices",
+      "Keyboard shortcuts for quick access",
+
+    ],
+    githubLink: "https://github.com/vikram-singh9/NextJS_Calculater_App",
+    liveLink: "https://next-js-calculater-app.vercel.app/",
+    date: "June 2024",
+    duration: "1 day",
+    role: "Frontend Developer",
+  },
+
+
+  {
+    id: "10",
+    title: "A Quiz App",
+    subtitle: "Test Your Knowledge!",
+    description: "A fun quiz app that challenges your knowledge across various topics. Compete with friends and track your scores!",
+    longDescription:
+      "Our Quiz App is designed for trivia lovers. With a wide range of topics and difficulty levels, you can test your knowledge and challenge your friends. Whether you're preparing for a quiz competition or just want to have some fun, our app provides an engaging experience.",
+    image: "/images/qapp.png",
+    technologies: ["Nextjs", "TypeScript", "CSS Modules", "Quiz API"],
+    features: [
+      "Multiple quiz categories",
+      "Timed quizzes and leaderboards",
+      "User authentication and profiles",
+      "Progress tracking and statistics",
+      "Responsive design for all devices",
+    ],
+    githubLink: "https://github.com/vikram-singh9/project-quiz-app",
+    liveLink: "https://project-quiz-app-eta.vercel.app/",
+    date: "Dec 2024",
+    duration: "2 days",
+    role: "Frontend Developer",
+  },
+
+
+  {
+    id: "11",
+    title: "Snake Game",
+    subtitle: "A Classic Snake Game",
+    description: "A modern twist on the classic snake game. Eat, grow, and avoid crashing into yourself!",
+    longDescription:
+      "Our Snake Game is a fun and addictive way to pass the time. With smooth controls and vibrant graphics, you can enjoy the classic gameplay with a modern touch. Whether you're a casual gamer or a hardcore player, our game provides hours of entertainment.",
+    image: "/images/snakeapp.png",
+    technologies: ["Nextjs", "TypeScript","Tailwind", "CSS Modules"],
+    features: [
+      "Classic snake gameplay",
+      "Multiple levels and challenges",
+      "Leaderboard and achievements",
+      "Customizable snake skins",
+      "Responsive design for all devices",
+    ],
+    githubLink: "https://github.com/yourusername/tic-tac-toe",
+    liveLink: "https://tic-tac-toe-xi-pied.vercel.app/",
+    date: "Jan 2025",
+    duration: "1 Day",
+    role: "Frontend Developer",
   },
 ]
 
