@@ -283,7 +283,33 @@ const projects: Project[] = [
     duration: "1 Day",
     role: "Frontend Developer",
   },
+
+
+  {
+    id: "12",
+    title: "Next Js Notes App",
+    subtitle: "Your Digital Notebook!",
+    description:
+      "A sleek notes app that helps you organize your thoughts and ideas. Create, edit, and manage your notes effortlessly!",
+    longDescription:
+      "Our Next Js Notes App is designed for students, professionals, and anyone who needs to keep track of their thoughts. With a clean interface and powerful features, you can create, edit, and manage your notes with ease. Whether you're taking class notes or jotting down ideas, our app provides a seamless experience.",
+    image: "/images/notesapp.png",
+    technologies: ["Nextjs", "TypeScript", "CSS Modules", "tailwind"],
+    features: [
+      "User authentication and profiles",
+      "Rich text editing",
+      "Tagging and categorization",
+      "Search and filter notes",
+      "Responsive design for all devices",
+    ],
+    githubLink: "https://github.com/vikram-singh9/notes-app-nextjs",
+    liveLink: "https://notes-app-nextjs-six.vercel.app/",
+    date: "January 2025",
+    duration: "1 Day",
+    role: "Frontend Developer",
+  },
 ]
+
 
 const ProjectCard: React.FC<{ project: Project; isSelected: boolean; onClick: () => void }> = ({
   project,
@@ -433,7 +459,9 @@ const ProjectsSection: React.FC = () => {
               onClick={() => setSelectedProject(project)}
             />
           ))}
+
         </div>
+        
         <AnimatePresence>{selectedProject && <ProjectDetails project={selectedProject} />}</AnimatePresence>
         {!selectedProject && (
           <motion.div
