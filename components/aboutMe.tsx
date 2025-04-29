@@ -11,8 +11,8 @@ const AboutMe = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h1 className="text-5xl font-extrabold text-purple-600 mb-6">About Me!</h1>
-      </motion.div>
+        <h1 className='text-4xl font-bold text-center mb-8 bg-gradient-to-r from-[#8AF9FF] to-[#FF74FD] bg-clip-text text-transparent'>About Me</h1>
+        </motion.div>
 
       <motion.div
         className="max-w-4xl mx-auto"
