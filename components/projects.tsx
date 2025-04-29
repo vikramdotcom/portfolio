@@ -171,7 +171,7 @@ const projects: Project[] = [
     description: "A modern book store app that lets you explore, review, and purchase books with ease. Discover your next read!",
     longDescription:
       "Our Book Store app is designed for book lovers. With a sleek interface and powerful search features, you can easily find and explore your favorite books. Whether you're looking for the latest bestsellers or classic literature, our app provides a seamless shopping experience.",
-    image: "/images/book.jpg",
+    image: "/images/book.jpvg",
     technologies: ["React", "TypeScript", "nextjs", "CSS Modules", "tailwind"],
     features: [
       "User authentication",
