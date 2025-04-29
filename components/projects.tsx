@@ -308,6 +308,259 @@ const projects: Project[] = [
     duration: "1 Day",
     role: "Frontend Developer",
   },
+
+
+  {
+    id: "13",
+    title: "Streamlit age Calculater",
+    subtitle: "Calculate your age!",
+    description:
+      "A calculator app that helps you calculate your age in years, months, and days. Enter your birth date and get instant results!",
+    longDescription:
+      "Our Streamlit Age Calculator is a simple yet powerful tool that helps you calculate your age in a fun and interactive way. Just enter your birth date, and the app will instantly provide you with your age in years, months, and days. It's perfect for anyone curious about their age or looking to celebrate their birthday!",
+    image: "/images/ageca.jpg",
+    technologies: ["streamlit", "Python", "uv"],
+    features: [
+      "User-friendly interface",
+      "Instant age calculation",
+      "Responsive design for all devices",
+      "Share your age with friends",
+      "Fun animations and effects",
+    ],
+    githubLink: "https://github.com/vikram-singh9/Streamlit_Age_Calculater",
+    liveLink: "https://appagecalculater-lyuvgtvblef6oadc5ynzps.streamlit.app/",
+    date: "January 2025",
+    duration: "1 Day",
+    role: "Python Developer",
+  },
+
+
+  {
+    id: "14",
+    title: "Data Sweeper",
+    subtitle: "convert into csv!",
+    description:
+      "A data cleaning app that helps you convert your data into CSV format. Upload your data and get a clean CSV file instantly!",
+    longDescription:
+      "Our Data Sweeper app is designed for data enthusiasts and professionals. With a user-friendly interface, you can easily upload your data and convert it into CSV format. Whether you're working with spreadsheets, databases, or any other data source, our app provides a seamless experience for cleaning and converting your data.",
+    image: "/images/datas.jpg",
+    technologies: ["streamlit", "Python", "uv"],
+    features: [
+      "User-friendly interface",
+      "Instant data conversion",
+      "Supports various data formats",
+      "Download your CSV file instantly",
+      "Responsive design for all devices",
+    ],
+    githubLink: "https://github.com/vikram-singh9/Assignment01_Growth_MindSet_Challenge_Q3",
+    liveLink: "https://vikram-singh9-assignment01-growth-mindset-file-converter-4ymf8c.streamlit.app/",
+    date: "January 2025",
+    duration: "1 Day",
+    role: "Python Developer",
+  },
+
+
+
+  {
+    id: "15",
+    title: "Meme Generator App",
+    subtitle: "Generate memes with ease!",
+    description:
+      "A fun meme generator app that lets you create and share memes effortlessly. Choose images, add text, and share your creations!",
+    longDescription:
+      "Our Meme Generator App is designed for meme lovers. With a user-friendly interface, you can easily choose images, add text, and create your own memes. Whether you're looking to share a laugh with friends or create viral content, our app provides the tools you need.",
+    image: "/images/memege.jpg",
+    technologies: ["streamlit", "Python", "uv"],
+    features: [
+      "User-friendly interface",
+      "Instant meme generation",
+      "Supports various image formats",
+      "Share your memes on social media",
+      "Responsive design for all devices",
+    ],
+    githubLink: "https://github.com/vikram-singh9/Random_Meme_Generator",
+    liveLink: "https://randommemegenerator.streamlit.app/",
+    date: "January 2025",
+    duration: "1 Day",
+    role: "python Developer",
+  },
+
+
+
+  {
+    id: "16",
+    title: "Random Movies Generator",
+    subtitle: "Discover Your Next Favorite Film!",
+    description:
+      "A random movie generator app that helps you discover new films. Get personalized recommendations based on your preferences!",
+    longDescription:
+      "Our Random Movies Generator app is designed for movie lovers. With a sleek interface and powerful algorithms, you can discover new films based on your preferences. Whether you're looking for the latest blockbusters or hidden gems, our app provides personalized recommendations to enhance your movie-watching experience.",
+    image: "/images/movi.jpg",
+    technologies: ["streamlit", "Python", "uv"],
+    features: [
+      "User-friendly interface",
+      "Instant movie recommendations",
+      "Supports various genres and categories",
+      "Save your favorite movies",
+      "Responsive design for all devices",
+    ],
+    githubLink: "https://github.com/vikram-singh9/Movie_Search_App_Streamlit",
+    liveLink: "#",
+    date: "Feb 2025",
+    duration: "1 Day",
+    role: "python Developer",
+  },
+
+
+
+  {
+    id: "17",
+    title: "Mood Tracker App",
+    subtitle: "Track Your Emotions!",
+    description:
+      "A mood tracker app that helps you monitor your emotions. Log your feelings and gain insights into your mental well-being!",
+    longDescription:
+      "Our Mood Tracker App is designed for mental health enthusiasts. With a user-friendly interface, you can easily log your feelings and track your emotions over time. Whether you're looking to improve your mental well-being or simply want to understand your mood patterns, our app provides valuable insights.",
+    image: "/images/mood.jpg",
+    technologies: ["streamlit", "Python", "uv"],
+    features: [
+      "User-friendly interface",
+      "Instant mood logging",
+      "Supports various mood categories",
+      "Visualize your mood patterns",
+      "Responsive design for all devices",
+    ],
+    githubLink: "https://github.com/vikram-singh9/Python_Mood_Tracker",
+    liveLink: "https://pythonmoodtracker.streamlit.app/",
+    date: "March 2025",
+    duration: "1 Day",
+    role: "python Developer",
+  },
+  
+ 
+
+  {
+    id: "18",
+    title: "Random Poem Generator",
+    subtitle: "Generate random poem!",
+    description:
+      "Generate random poem by just clicking on poem generate it will generate a random poem for you froom the API!",
+    longDescription:
+      "Generate random poem by just clicking on poem generate it will generate a random poem for you froom the API!",
+    image: "/images/poeem.jpg",
+    technologies: ["streamlit", "Python", "uv"],
+    features: [
+      "User-friendly interface",
+      "Instant poem generation",
+      "Supports various poem categories",
+      "Share your poems on social media",
+      "Responsive design for all devices",
+    ],
+    githubLink: "https://github.com/vikram-singh9/Random_Poem_Generator_Streamlit",
+    liveLink: "https://randompoemgeneratorappbyvikram.streamlit.app/",
+    date: "feb 2025",
+    duration: "1 Day",
+    role: "Python Developer",
+  },
+
+  {
+    id: "19",
+    title: "Password Strength Checker",
+    subtitle: "check your password strength!",
+    description:
+      "A password strength checker app that helps you create strong passwords. Get instant feedback on your password strength!",
+    longDescription:
+      "Our Password Strength Checker app is designed for security-conscious users. With a sleek interface and powerful algorithms, you can easily check the strength of your passwords. Whether you're creating new passwords or updating existing ones, our app provides instant feedback to help you enhance your online security.",
+    image: "/images/pswrd.jpg",
+    technologies: ["streamlit", "Python", "uv"],
+    features: [
+      "User-friendly interface",
+      "Instant password strength analysis",
+      "Supports various password criteria",
+      "Generate strong passwords",
+      "Responsive design for all devices",
+    ],
+    githubLink: "https://vikram-singh9-assignment03-password-strength-meter-main-r1cdo0.streamlit.app/",
+    liveLink: "https://vikram-singh9-assignment03-password-strength-meter-main-r1cdo0.streamlit.app/",
+    date: "April 2025",
+    duration: "1 Day",
+    role: "Python Developer",
+  },
+
+
+  {
+    id: "20",
+    title: "unit converter",
+    subtitle: "Convert units easily!",
+    description:
+      "A unit converter app that helps you convert between different units. Get instant results for various conversions!",
+    longDescription:
+      "Our Unit Converter app is designed for anyone who needs to convert between different units. With a user-friendly interface, you can easily select the units you want to convert and get instant results. Whether you're working with measurements, currencies, or any other units, our app provides a seamless experience.",
+    image: "/images/unit.png",
+    technologies: ["streamlit", "Python", "uv"],
+    features: [
+      "User-friendly interface",
+      "Instant unit conversion",
+      "Supports various unit categories",
+      "Customizable conversion settings",
+      "Responsive design for all devices",
+    ],
+    githubLink: "https://github.com/vikram-singh9/Assignment02_Unit_Converter_App_Q3",
+    liveLink: "https://vikram-singh9-assignment02-unit-converter-app-q3-app-lffxhy.streamlit.app/",
+    date: "feb 2025",
+    duration: "1 Day",
+    role: "Python Developer",
+  },
+
+
+  // {
+  //   id: "21",
+  //   title: "unit converter",
+  //   subtitle: "Convert units easily!",
+  //   description:
+  //     "A unit converter app that helps you convert between different units. Get instant results for various conversions!",
+  //   longDescription:
+  //     "Our Unit Converter app is designed for anyone who needs to convert between different units. With a user-friendly interface, you can easily select the units you want to convert and get instant results. Whether you're working with measurements, currencies, or any other units, our app provides a seamless experience.",
+  //   image: "/images/unit.png",
+  //   technologies: ["streamlit", "Python", "uv"],
+  //   features: [
+  //     "User-friendly interface",
+  //     "Instant unit conversion",
+  //     "Supports various unit categories",
+  //     "Customizable conversion settings",
+  //     "Responsive design for all devices",
+  //   ],
+  //   githubLink: "https://github.com/vikram-singh9/Assignment02_Unit_Converter_App_Q3",
+  //   liveLink: "https://vikram-singh9-assignment02-unit-converter-app-q3-app-lffxhy.streamlit.app/",
+  //   date: "feb 2025",
+  //   duration: "1 Day",
+  //   role: "Python Developer",
+  // },
+
+
+  // {
+  //   id: "22",
+  //   title: "unit converter",
+  //   subtitle: "Convert units easily!",
+  //   description:
+  //     "A unit converter app that helps you convert between different units. Get instant results for various conversions!",
+  //   longDescription:
+  //     "Our Unit Converter app is designed for anyone who needs to convert between different units. With a user-friendly interface, you can easily select the units you want to convert and get instant results. Whether you're working with measurements, currencies, or any other units, our app provides a seamless experience.",
+  //   image: "/images/unit.png",
+  //   technologies: ["streamlit", "Python", "uv"],
+  //   features: [
+  //     "User-friendly interface",
+  //     "Instant unit conversion",
+  //     "Supports various unit categories",
+  //     "Customizable conversion settings",
+  //     "Responsive design for all devices",
+  //   ],
+  //   githubLink: "https://github.com/vikram-singh9/Assignment02_Unit_Converter_App_Q3",
+  //   liveLink: "https://vikram-singh9-assignment02-unit-converter-app-q3-app-lffxhy.streamlit.app/",
+  //   date: "feb 2025",
+  //   duration: "1 Day",
+  //   role: "Python Developer",
+  // },
 ]
 
 

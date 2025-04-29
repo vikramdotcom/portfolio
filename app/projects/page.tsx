@@ -3,7 +3,10 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    <div><ProjectsSection/></div>
+    <div>
+      
+      <ProjectsSection/>
+      </div>
   )
 }
 
