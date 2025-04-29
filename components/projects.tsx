@@ -33,7 +33,7 @@ const projects: Project[] = [
       "A modern e-commerce platform that connects buyers and sellers seamlessly. Shop, sell, and explore with ease!",
     longDescription:
       "Avion Ecommerce Marketplace is a cutting-edge e-commerce platform designed to provide a seamless shopping experience. With a user-friendly interface and powerful features, it connects buyers and sellers effortlessly. Whether you're looking for the latest gadgets, fashion, or home essentials, our marketplace has it all.",
-    image: "/images/avion.png",
+    image: "/images/ecom.jpg",
     technologies: ["Nexjs", "TypeScript", "Tailwind CSS", "react.js"],
     features: [
       "User authentication and profiles",
@@ -59,7 +59,7 @@ const projects: Project[] = [
       "A sleek to-do app that streamlines your tasks. Organize and prioritize effortlessly while staying focused!",
     longDescription:
       "Our TODO-APP is designed to revolutionize the way you manage your daily tasks. With an intuitive interface and powerful features, it helps you stay organized, focused, and productive. Whether you're a busy professional, a student, or anyone looking to better manage their time, our app provides the tools you need to succeed.",
-    image: "/images/tt.png",
+    image: "/images/todo.jpg",
     technologies: ["React", "TypeScript", "Tailwind CSS", "Next.js"],
     features: [
       "Intuitive task creation and management",
@@ -82,7 +82,7 @@ const projects: Project[] = [
       "A sleek countdown timer to keep you on track. Set time limits effortlessly and stay focused on your goals.",
     longDescription:
       "Our COUNTDOWN-TIMER is more than just a clock – it's a powerful tool for time management and productivity. Whether you're timing your work sessions, managing your breaks, or keeping track of important deadlines, this app provides a visually appealing and user-friendly way to stay on schedule.",
-    image: "/images/ct.png",
+    image: "/images/timerrrr.jpg",
     technologies: ["React", "JavaScript", "CSS3", "Redux"],
     features: [
       "Multiple timer support",
@@ -104,7 +104,7 @@ const projects: Project[] = [
     description: "A digital clock that keeps you in sync with every moment, designed for accuracy and style.",
     longDescription:
       "Our DIGITAL CLOCK is not just a timepiece – it's a statement. Combining sleek design with precise timekeeping, this app offers a modern take on the classic clock. Perfect for desktops, smart displays, or as a full-screen clock for any device, it brings both functionality and style to your digital environment.",
-    image: "/images/digitalClock.png",
+    image: "/images/clockk.jpg",
     technologies: ["HTML5", "CSS3", "JavaScript", "SVG animations"],
     features: [
       "Multiple time zone support",
@@ -150,7 +150,7 @@ const projects: Project[] = [
     description: "A dynamic resume builder that helps you create a professional resume in minutes. Customize and download easily!",
     longDescription:
       "Our Dynamic Resume Builder is designed to simplify the resume creation process. With a user-friendly interface and customizable templates, you can create a professional resume that stands out. Whether you're a recent graduate or an experienced professional, our tool helps you showcase your skills and experience effectively.",
-    image: "/images/rb.png",
+    image: "/images/resumeee.jpg",
     technologies: ["React", "TypeScript","Nextjs", "CSS Modules", "tailwind"],
     features: [
       "Customizable templates",
@@ -171,7 +171,7 @@ const projects: Project[] = [
     description: "A modern book store app that lets you explore, review, and purchase books with ease. Discover your next read!",
     longDescription:
       "Our Book Store app is designed for book lovers. With a sleek interface and powerful search features, you can easily find and explore your favorite books. Whether you're looking for the latest bestsellers or classic literature, our app provides a seamless shopping experience.",
-    image: "/images/bs.png",
+    image: "/images/book.jpg",
     technologies: ["React", "TypeScript", "nextjs", "CSS Modules", "tailwind"],
     features: [
       "User authentication",
@@ -195,7 +195,7 @@ const projects: Project[] = [
     description: "A simple audio player that lets you play, pause, and skip tracks effortlessly. Enjoy your music collection!",
     longDescription:
       " Our Simple Audio Player is designed for music lovers. With a clean interface and easy-to-use controls, you can enjoy your favorite tracks without any hassle. Whether you're at home or on the go, our player provides a seamless listening experience.",
-    image: "/images/aplayer.png",
+    image: "/images/audio.jpg",
     technologies: ["Nextjs", "TypeScript", "CSS Modules", "Audio API"],
     features: [
       "Play, pause, and skip tracks",
@@ -244,7 +244,7 @@ const projects: Project[] = [
     description: "A fun quiz app that challenges your knowledge across various topics. Compete with friends and track your scores!",
     longDescription:
       "Our Quiz App is designed for trivia lovers. With a wide range of topics and difficulty levels, you can test your knowledge and challenge your friends. Whether you're preparing for a quiz competition or just want to have some fun, our app provides an engaging experience.",
-    image: "/images/qapp.png",
+    image: "/images/quiz.jpg",
     technologies: ["Nextjs", "TypeScript", "CSS Modules", "Quiz API"],
     features: [
       "Multiple quiz categories",
@@ -268,7 +268,7 @@ const projects: Project[] = [
     description: "A modern twist on the classic snake game. Eat, grow, and avoid crashing into yourself!",
     longDescription:
       "Our Snake Game is a fun and addictive way to pass the time. With smooth controls and vibrant graphics, you can enjoy the classic gameplay with a modern touch. Whether you're a casual gamer or a hardcore player, our game provides hours of entertainment.",
-    image: "/images/snakeapp.png",
+    image: "/images/snake.jpg",
     technologies: ["Nextjs", "TypeScript","Tailwind", "CSS Modules"],
     features: [
       "Classic snake gameplay",
@@ -293,7 +293,7 @@ const projects: Project[] = [
       "A sleek notes app that helps you organize your thoughts and ideas. Create, edit, and manage your notes effortlessly!",
     longDescription:
       "Our Next Js Notes App is designed for students, professionals, and anyone who needs to keep track of their thoughts. With a clean interface and powerful features, you can create, edit, and manage your notes with ease. Whether you're taking class notes or jotting down ideas, our app provides a seamless experience.",
-    image: "/images/notesapp.png",
+    image: "/images/notess.jpg",
     technologies: ["Nextjs", "TypeScript", "CSS Modules", "tailwind"],
     features: [
       "User authentication and profiles",
@@ -496,7 +496,7 @@ const projects: Project[] = [
       "A unit converter app that helps you convert between different units. Get instant results for various conversions!",
     longDescription:
       "Our Unit Converter app is designed for anyone who needs to convert between different units. With a user-friendly interface, you can easily select the units you want to convert and get instant results. Whether you're working with measurements, currencies, or any other units, our app provides a seamless experience.",
-    image: "/images/unit.png",
+    image: "/images/unit.jpg",
     technologies: ["streamlit", "Python", "uv"],
     features: [
       "User-friendly interface",
