@@ -175,7 +175,7 @@ const projects: Project[] = [
     technologies: ["React", "TypeScript", "nextjs", "CSS Modules", "tailwind"],
     features: [
       "User authentication",
-      "Book reviews and ratings",sasasasa
+      "Book reviews and ratings",sasasasasa
       "Wishlist and favorites",
       "Order history and tracking",
       "Responsive design for all devices",
