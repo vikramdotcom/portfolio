@@ -25,7 +25,7 @@ interface Project {
 
 const projects: Project[] = [
 
-  {bvnkhgk
+  {bvnkhgkkh
     id: "1",
     title: "Avion Ecommerce Marketplace",
     subtitle: "Your One-Stop Shop for Everything!",
