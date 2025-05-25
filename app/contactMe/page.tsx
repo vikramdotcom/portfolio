@@ -14,4 +14,4 @@ const Contact = () => {
   )
 }
 
-export default Contact hehe
+export default Contact 
