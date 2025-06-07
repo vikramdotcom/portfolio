@@ -102,7 +102,7 @@ export const HeroSection = () => {
       </div>
 
       <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2">
-        <motion.div
+        <motion.div vbv
           animate={{
             y: [0, 18, 0],
           }}
