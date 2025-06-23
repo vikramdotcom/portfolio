@@ -35,7 +35,7 @@ export const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Passionate Web Developer with expertise in Frontend Development. I use TypeScript/JavaScript, React & Next.js to build interactive & modern web applications.
+              Web & Agentic AI Developer skilled in building interactive web applications with React, Next.js, and TypeScript. I also create AI agents for automation and problem-solving.
             </motion.p>
             <motion.div
               className="flex flex-wrap gap-4"
