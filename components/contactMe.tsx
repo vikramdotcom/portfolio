@@ -110,7 +110,7 @@ const Form = () => {
                   name="email"
                   className="bg-gray-700/50 text-gray-100 border-gray-600/50 focus:border-purple-500 focus:ring-purple-500/20 focus:ring-2 transition-all duration-300 pl-4 pr-4 py-3 rounded-xl backdrop-blur-sm hover:bg-gray-700/70 group-hover:border-gray-500"
                   required
-                  placeholder="your.email@example.com"
+                  placeholder="email"
                 />
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-purple-500/0 via-purple-500/5 to-purple-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
               </div>
