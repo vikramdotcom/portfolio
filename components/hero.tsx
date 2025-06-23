@@ -70,7 +70,7 @@ export const HeroSection = () => {
                 <FaTwitter size={24} />
               </motion.a>
               <motion.a
-                href="https://www.linkedin.com/in/vikram-s-404839217/"
+                href="https://www.linkedin.com/in/vikramsinghdev/"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
