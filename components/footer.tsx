@@ -16,7 +16,7 @@ const Footer = () => {
             <FaGithub />
           </a>
           <a
-            href="https://www.linkedin.com/in/vikram-s-404839217/"
+            href="https://www.linkedin.com/in/vikramsinghdev/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-purple-400 transition text-2xl"
@@ -24,7 +24,7 @@ const Footer = () => {
             <FaLinkedin />
           </a>
           <a
-            href="https://x.com/vkram90"
+            href="https://x.com/vkramtechwala"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-purple-400 transition text-2xl"
