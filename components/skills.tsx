@@ -146,7 +146,7 @@ export default function SkillsSection() {
           ].map((stat, index) => (
             <div key={index} className="text-center group">
               <div
-                className="text-3xl font-bold text-blue-400 mb-2 group-hover:scale-110 group-hover:text-cyan-400 transition-all duration-300 animate-count-up"
+                className="text-3xl font-bold text-purple-600 mb-2 group-hover:scale-110 group-hover:text-cyan-400 transition-all duration-300 animate-count-up"
                 style={{ animationDelay: stat.delay }}
               >
                 {stat.value}
