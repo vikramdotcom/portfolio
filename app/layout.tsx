@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Navbar from "@/components/navbar";
+import FloatingNav from "@/components/navbar";
 import Footer from "@/components/footer";
 import { Poppins } from 'next/font/google'
 import { Analytics } from "@vercel/analytics/next"
@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>
-        <Navbar/>
+        <FloatingNav/>
         {children}
          <Analytics />
         <Footer/>
