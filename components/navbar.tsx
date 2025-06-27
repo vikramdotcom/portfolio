@@ -260,7 +260,7 @@ export function FloatingNav() {
             }}
           />
 
-          <div className="relative flex items-center justify-between">
+          <div className="relative flex items-center justify-center gap-4 z-10">
             {/* Logo */}
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link href="/" className="font-bold text-xl mr-8" onClick={() => handleNavClick("/")}>
