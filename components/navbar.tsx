@@ -267,7 +267,7 @@ export function FloatingNav() {
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-blue-500">
                   Vikram
                 </span>
-                <span className="text-white ml-1">S</span>
+              
               </Link>
             </motion.div>
 
@@ -329,7 +329,7 @@ export function FloatingNav() {
                 >
                   <Button
                     size="sm"
-                    className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-pink-500 hover:to-purple-500 border-0 text-white font-medium px-6 shadow-lg hover:shadow-xl transition-all duration-300"
+                    className="bg-purple-600 border-0 text-white font-medium shadow-lg hover:shadow-xl transition-all duration-300 sm:text-sm"
                   >
                     Hire Me
                   </Button>
@@ -453,7 +453,7 @@ export function FloatingNav() {
                   {/* Mobile CTA */}
                   <motion.div variants={itemVariants} className="pt-4 mt-4 border-t border-zinc-800">
                     <Button
-                      className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-pink-500 hover:to-purple-500 border-0 text-white font-medium py-3"
+                      className="bg-purple-600 border-0 text-white font-medium py-3"
                       onClick={() => setIsOpen(false)}
                     >
                       Hire Me
