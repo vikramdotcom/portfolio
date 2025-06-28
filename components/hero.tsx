@@ -27,7 +27,7 @@ export const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               Hi, I'm <br />
-              <span className="text-white">Vikram Singh.</span>
+              <span className="text-white">Vikram Singh,</span>
             </motion.h1>
             <motion.p
               className="text-xl md:text-2xl mb-8 text-gray-300 max-w-2xl"
