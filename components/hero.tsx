@@ -1,121 +1,186 @@
 "use client"
 
-import Image from "next/image"
 import { motion } from "framer-motion"
-import { FaGithubAlt, FaLinkedin , FaTwitter} from "react-icons/fa6"
 import { Button } from "@/components/ui/button"
+import { Download, ArrowRight, Code2, Sparkles, MapPin } from "lucide-react"
+import { useEffect, useState } from "react"
 
-export const HeroSection = () => {
+const HeroSection = () => {
+  const [currentRole, setCurrentRole] = useState(0)
+
+  const roles = ["Full-Stack Developer", "Frontend Specialist", "Agentic AI Developer", "Next.js Expert"]
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentRole((prev) => (prev + 1) % roles.length)
+    }, 3000)
+    return () => clearInterval(interval)
+  }, [])
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.3,
+      },
+    },
+  }
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        ease: "easeOut",
+      },
+    },
+  }
+
   return (
-    <section className="relative py-20 min-h-screen flex items-center justify-center overflow-hidden bg-zinc-900 text-white px-4 sm:px-6 lg:px-8">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-zinc-900 text-white px-4 sm:px-6 lg:px-8 pt-16">
+      {/* Background Elements */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-[url('/images/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
-      </div>
+        {/* Animated Grid */}
+        <div className="absolute inset-0 bg-[url('/images/grid.svg')] bg-center opacity-20 [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
 
-      <div className="container mx-auto z-10">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-20">
-          <motion.div
-            className="lg:w-1/2"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <motion.h1 
-              className="text-5xl leading-snug sm:text-5xl md:text-6xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            >
-              Hi, I'm <br />
-              <span className="text-white">Vikram Singh,</span>
-            </motion.h1>
-            <motion.p
-              className="text-xl md:text-2xl mb-8 text-gray-300 max-w-2xl"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-            >
-              Web & Agentic AI Developer skilled in building interactive web applications with React, Next.js, and TypeScript. I also create AI agents for automation and problem-solving.
-            </motion.p>
-            <motion.div
-              className="flex flex-wrap gap-4"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-            >
-              <Button className="bg-purple-600 hover:bg-purple-500 text-white rounded-full px-8 py-6 text-lg font-semibold transition-all duration-300 transform hover:scale-105">
-                <a href="/images/resume.pdf" target="_blank" rel="noopener noreferrer">
-                  Download CV
-                </a>
-              </Button>
-              <motion.a
-                href="https://github.com/vikram-singh9"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                className="bg-purple-600 text-white p-3 rounded-full"
-              >
-                <FaGithubAlt size={24} />
-              </motion.a>
-
-              <motion.a
-                href="https://x.com/vikramtechwala"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                className="bg-purple-600 text-white p-3 rounded-full"
-              >
-                <FaTwitter size={24} />
-              </motion.a>
-              <motion.a
-                href="https://www.linkedin.com/in/vikramsinghdev/"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                className="bg-purple-600 text-white p-3 rounded-full"
-              >
-                <FaLinkedin size={24} />
-              </motion.a>
-            </motion.div>
-          </motion.div>
-
-          <motion.div
-            className="lg:w-1/2 relative"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          >
-            <div className="relative w-80 h-80 sm:w-80 sm:h-80 mx-auto">
-              <Image
-                src="/images/mypic.jpg"
-                alt="Vikram Singh"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-full border-4 border-purple-600 shadow-2xl"
-              />
-            </div>
-          </motion.div>
-        </div>
-      </div>
-
-      <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2">
-        <motion.div 
+        {/* Floating Orbs */}
+        <motion.div
+          className="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-600/10 rounded-full blur-3xl"
           animate={{
-            y: [0, 18, 0],
+            scale: [1, 1.2, 1],
+            opacity: [0.3, 0.5, 0.3],
           }}
           transition={{
-            duration: 1.5,
+            duration: 4,
             repeat: Number.POSITIVE_INFINITY,
-            repeatType: "loop",
+            ease: "easeInOut",
           }}
-          className="w-6 h-10 rounded-full border-2 border-purple-600 flex justify-center items-start p-2"
-        >
-          <motion.div className="w-1 h-1 rounded-full bg-purple-600 bg-opacity-90" />
+        />
+        <motion.div
+          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-600/5 rounded-full blur-3xl"
+          animate={{
+            scale: [1.2, 1, 1.2],
+            opacity: [0.2, 0.4, 0.2],
+          }}
+          transition={{
+            duration: 5,
+            repeat: Number.POSITIVE_INFINITY,
+            ease: "easeInOut",
+            delay: 1,
+          }}
+        />
+      </div>
+
+      <div className="container mx-auto z-10 max-w-6xl">
+        <motion.div className="text-center space-y-8" variants={containerVariants} initial="hidden" animate="visible">
+          {/* Status Badge */}
+          <motion.div
+            variants={itemVariants}
+            className="inline-flex items-center px-4 py-2 rounded-full bg-green-600/20 border border-green-600/30 text-green-300 text-sm font-medium"
+          >
+            <div className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></div>
+            Available for hire
+          </motion.div>
+
+          {/* Main Heading */}
+          <motion.div variants={itemVariants} className="space-y-4">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+              <span className="block text-gray-300">Hi, I'm</span>
+              <span className="block bg-gradient-to-r from-purple-400 via-purple-600 to-purple-800 bg-clip-text text-transparent">
+                Vikram Singh
+              </span>
+            </h1>
+
+            {/* Animated Role */}
+            <div className="h-16 flex items-center justify-center">
+              <motion.h2
+                key={currentRole}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.5 }}
+                className="text-2xl sm:text-3xl md:text-4xl font-semibold text-purple-300"
+              >
+                {roles[currentRole]}
+              </motion.h2>
+            </div>
+          </motion.div>
+
+          {/* Description */}
+          <motion.p
+            variants={itemVariants}
+            className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed"
+          >
+            Passionate about creating <span className="text-purple-400 font-semibold">modern web applications</span>{" "}
+            with <span className="text-purple-400 font-semibold">React, Next.js, and TypeScript</span>.
+            <br className="hidden sm:block" />
+            Ready to bring your ideas to life with <span className="text-purple-400 font-semibold">clean code</span> and{" "}
+            <span className="text-purple-400 font-semibold">exceptional user experiences</span>.
+          </motion.p>
+
+          {/* Location */}
+          <motion.div variants={itemVariants} className="flex items-center justify-center text-gray-400">
+            <MapPin className="w-4 h-4 mr-2" />
+            <span>Pakistan • Open to Remote Work</span>
+          </motion.div>
+
+          {/* CTA Buttons */}
+          <motion.div
+            variants={itemVariants}
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6"
+          >
+            <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-purple-600/25 group">
+              <Download className="w-5 h-5 mr-2 group-hover:animate-bounce" />
+              Download Resume
+            </Button>
+
+            <Button
+              variant="outline"
+              className="border-2 border-purple-600 text-purple-400 hover:bg-purple-600 hover:text-white px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105 bg-transparent group"
+            >
+              <a href="#projects" className="flex items-center">
+                View My Work
+                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+              </a>
+            </Button>
+          </motion.div>
         </motion.div>
       </div>
+
+      {/* Floating Elements */}
+      <motion.div
+        className="absolute top-20 left-10 text-purple-600/20"
+        animate={{
+          rotate: 360,
+          scale: [1, 1.2, 1],
+        }}
+        transition={{
+          duration: 20,
+          repeat: Number.POSITIVE_INFINITY,
+          ease: "linear",
+        }}
+      >
+        <Code2 size={40} />
+      </motion.div>
+
+      <motion.div
+        className="absolute bottom-20 right-10 text-purple-600/20"
+        animate={{
+          rotate: -360,
+          scale: [1.2, 1, 1.2],
+        }}
+        transition={{
+          duration: 15,
+          repeat: Number.POSITIVE_INFINITY,
+          ease: "linear",
+        }}
+      >
+        <Sparkles size={30} />
+      </motion.div>
     </section>
   )
 }
