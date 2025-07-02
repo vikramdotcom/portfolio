@@ -5,6 +5,7 @@ import { Github, ExternalLink, Calendar, Code2 } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+
 interface Project {
   id: string
   title: string
@@ -44,15 +45,15 @@ const projects: Project[] = [
   },
   {
     id: "3",
-    title: "Book Store Application",
+    title: "Openai Advance Agent",
     description:
-      "A comprehensive book store app with user authentication, book reviews, wishlist functionality, and order tracking. Features a clean interface for browsing and purchasing books.",
-    image: "/images/bs.png?height=400&width=600",
-    technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
-    githubLink: "https://github.com/vikram-singh9/Assignment_Books_Store_Crud_Operations",
-    liveLink: "https://assignment-books-store-crud-operations.vercel.app/",
-    date: "May 2024",
-    category: "CRUD App",
+      "An advanced agent application that integrates with OpenAI's API to provide intelligent responses and actions. Built with Python and Chainlit, featuring user authentication for secure access.",
+    image: "/images/age.webp?height=400&width=600",
+    technologies: ["Python", "Openai api", "chainlit", "Authentication"],
+    githubLink: "https://github.com/vikram-singh9/Advance_Agent",
+    liveLink: "#",
+    date: "January 2025",
+    category: "Productivity",
   },
   {
     id: "4",
@@ -72,7 +73,7 @@ const projects: Project[] = [
     description:
       "A modern real estate website showcasing properties with advanced search filters, property details, and user-friendly navigation. Built with Next.js and TypeScript for a seamless user experience.",
     image: "/images/apk.png?height=400&width=600",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Authentication"],
+    technologies: ["html", "css", "javascrpt"],
     githubLink: "https://github.com/vikram-singh9/apna-ghar-karachi",
     liveLink: "https://apnagharkarachi.vercel.app/",
     date: "January 2025",
@@ -80,16 +81,17 @@ const projects: Project[] = [
   },
   {
     id: "6",
-    title: "Openai Advance Agent",
+    title: "Book Store Application",
     description:
-      "An advanced agent application that integrates with OpenAI's API to provide intelligent responses and actions. Built with Python and Chainlit, featuring user authentication for secure access.",
-    image: "/images/age.webp?height=400&width=600",
-    technologies: ["Python", "Openai api", "chainlit", "Authentication"],
-    githubLink: "https://github.com/vikram-singh9/Advance_Agent",
-    liveLink: "#",
-    date: "January 2025",
-    category: "Productivity",
+      "A comprehensive book store app with user authentication, book reviews, wishlist functionality, and order tracking. Features a clean interface for browsing and purchasing books.",
+    image: "/images/bs.png?height=400&width=600",
+    technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
+    githubLink: "https://github.com/vikram-singh9/Assignment_Books_Store_Crud_Operations",
+    liveLink: "https://assignment-books-store-crud-operations.vercel.app/",
+    date: "May 2024",
+    category: "CRUD App",
   },
+  
 ]
 
 const ProjectsShowcase: React.FC = () => {
