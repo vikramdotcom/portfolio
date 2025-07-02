@@ -196,7 +196,7 @@ const AboutMe = () => {
               <div className="space-y-3">
                 <Button asChild className="w-full bg-purple-600 hover:bg-purple-700 text-white">
                   <a
-                    href="https://www.linkedin.com/in/vikram-s-404839217/"
+                    href="https://www.linkedin.com/in/vikramsinghdev/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2"
@@ -212,13 +212,7 @@ const AboutMe = () => {
                     </svg>
                   </a>
                 </Button>
-                <Button
-                  variant="outline"
-                  className="w-full border-zinc-600 text-gray-300 hover:bg-zinc-700 hover:text-white bg-transparent"
-                >
-                  <Download className="w-4 h-4 mr-2" />
-                  Download Resume
-                </Button>
+               
               </div>
               <div className="mt-4 text-center">
                 <p className="text-xs text-gray-400">Ready to start immediately</p>

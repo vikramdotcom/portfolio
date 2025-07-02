@@ -44,14 +44,14 @@ const socialLinks = [
   {
     name: "Facebook",
     icon: Facebook,
-    url: "https://facebook.com/yourusername",
+    url: "https://facebook.com/thaakur.saab",
     color: "hover:text-blue-500",
     bgColor: "hover:bg-blue-900/20",
   },
   {
     name: "Instagram",
     icon: Instagram,
-    url: "https://instagram.com/vssodho_official",
+    url: "https://instagram.com/vikramintech",
     color: "hover:text-pink-400",
     bgColor: "hover:bg-pink-900/20",
   },
@@ -231,7 +231,7 @@ const ContactPage = () => {
                 <div className="space-y-3 text-gray-300">
                   <div className="flex items-center">
                     <Mail className="w-4 h-4 mr-3 text-purple-400" />
-                    <span>your.email@example.com</span>
+                    <span>vikram.dev.co@gmail.com</span>
                   </div>
                   <div className="flex items-center">
                     <MessageSquare className="w-4 h-4 mr-3 text-purple-400" />

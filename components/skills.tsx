@@ -136,25 +136,7 @@ export default function SkillsSection() {
           </CardContent>
         </Card>
 
-        {/* Stats with Animation */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
-          {[
-            { value: "3+", label: "Years Experience", delay: "0s" },
-            { value: "50+", label: "Projects Completed", delay: "0.2s" },
-            { value: "20+", label: "Technologies", delay: "0.4s" },
-            { value: "100%", label: "Passion for Code", delay: "0.6s" },
-          ].map((stat, index) => (
-            <div key={index} className="text-center group">
-              <div
-                className="text-3xl font-bold text-purple-600 mb-2 group-hover:scale-110 group-hover:text-cyan-400 transition-all duration-300 animate-count-up"
-                style={{ animationDelay: stat.delay }}
-              >
-                {stat.value}
-              </div>
-              <div className="text-sm text-zinc-400 group-hover:text-zinc-300 transition-colors">{stat.label}</div>
-            </div>
-          ))}
-        </div>
+       
       </div>
 
       <style jsx>{`

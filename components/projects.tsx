@@ -4,7 +4,7 @@ import type React from "react"
 import { Github, ExternalLink, Calendar, Code2 } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-
+import Link from "next/link"
 interface Project {
   id: string
   title: string
@@ -32,14 +32,14 @@ const projects: Project[] = [
   },
   {
     id: "2",
-    title: "Dynamic Resume Builder",
+    title: "Dynamic T shirts Store",
     description:
-      "A professional resume builder with customizable templates, real-time preview, and PDF export functionality. Users can create stunning resumes in minutes with an intuitive interface.",
-    image: "/images/rb.png?height=400&width=600",
+      "A dynamic online T-shirt store where users can browse, customize, and purchase unique T-shirt designs. Built with modern web technologies, the platform features a responsive interface, seamless shopping experience, and easy product management.",
+    image: "/images/yugen.png?height=400&width=600",
     technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
-    githubLink: "https://github.com/vikram-singh9/Dynamic_Resume_Builder_Milestone02",
-    liveLink: "https://dynamic-resume-builder-02.vercel.app/",
-    date: "April 2023",
+    githubLink: "https://github.com/vikram-singh9/live-tshirts-store",
+    liveLink: "https://live-tshirts-store.vercel.app/",
+    date: "April 2024",
     category: "Web App",
   },
   {
@@ -56,25 +56,37 @@ const projects: Project[] = [
   },
   {
     id: "4",
-    title: "Interactive Quiz Application",
+    title: "Real time anime search app",
     description:
-      "A fun and engaging quiz app with multiple categories, timed quizzes, leaderboards, and progress tracking. Perfect for testing knowledge across various topics.",
-    image: "/images/qapp.png?height=400&width=600",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Quiz API"],
-    githubLink: "https://github.com/vikram-singh9/project-quiz-app",
-    liveLink: "https://project-quiz-app-eta.vercel.app/",
+      "A responsive web app that allows users to search for anime titles in real time, view detailed information, and discover trending shows. Built with Next.js and TypeScript for a fast and interactive experience.",
+    image: "/images/anim.png?height=400&width=600",
+    technologies: ["Streamlit", "python"],
+    githubLink: "https://github.com/vikram-singh9/Anime_Explorer_Streamlit",
+    liveLink: "https://animetracker.streamlit.app/",
     date: "December 2024",
     category: "Interactive",
   },
   {
     id: "5",
-    title: "Notes Management App",
+    title: "Real state website",
     description:
-      "A digital notebook application with rich text editing, tagging system, search functionality, and user authentication. Organize your thoughts and ideas efficiently.",
-    image: "/images/notesapp.png?height=400&width=600",
+      "A modern real estate website showcasing properties with advanced search filters, property details, and user-friendly navigation. Built with Next.js and TypeScript for a seamless user experience.",
+    image: "/images/apk.png?height=400&width=600",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Authentication"],
-    githubLink: "https://github.com/vikram-singh9/notes-app-nextjs",
-    liveLink: "https://notes-app-nextjs-six.vercel.app/",
+    githubLink: "https://github.com/vikram-singh9/apna-ghar-karachi",
+    liveLink: "https://apnagharkarachi.vercel.app/",
+    date: "January 2025",
+    category: "Productivity",
+  },
+  {
+    id: "6",
+    title: "Openai Advance Agent",
+    description:
+      "An advanced agent application that integrates with OpenAI's API to provide intelligent responses and actions. Built with Python and Chainlit, featuring user authentication for secure access.",
+    image: "/images/age.webp?height=400&width=600",
+    technologies: ["Python", "Openai api", "chainlit", "Authentication"],
+    githubLink: "https://github.com/vikram-singh9/Advance_Agent",
+    liveLink: "#",
     date: "January 2025",
     category: "Productivity",
   },
@@ -147,7 +159,7 @@ const ProjectsShowcase: React.FC = () => {
                 {/* Action Buttons */}
                 <div className="flex gap-4">
                   <Button asChild className="flex-1 bg-purple-600 hover:bg-purple-700 text-white">
-                    <a
+                    <Link
                       href={project.liveLink}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -155,7 +167,7 @@ const ProjectsShowcase: React.FC = () => {
                     >
                       <ExternalLink className="w-4 h-4" />
                       Live Demo
-                    </a>
+                    </Link>
                   </Button>
                   <Button
                     asChild

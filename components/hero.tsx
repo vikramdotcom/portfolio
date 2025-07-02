@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Download, ArrowRight, Code2, Sparkles, MapPin } from "lucide-react"
 import { useEffect, useState } from "react"
-
+import Link from "next/link"
 const HeroSection = () => {
   const [currentRole, setCurrentRole] = useState(0)
 
@@ -133,19 +133,21 @@ const HeroSection = () => {
             variants={itemVariants}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6"
           >
+            <Link href="/mycv.pdf" target="_blank" download className="w-full sm:w-auto">
             <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-purple-600/25 group">
               <Download className="w-5 h-5 mr-2 group-hover:animate-bounce" />
               Download Resume
             </Button>
+            </Link>
 
             <Button
               variant="outline"
               className="border-2 border-purple-600 text-purple-400 hover:bg-purple-600 hover:text-white px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105 bg-transparent group"
             >
-              <a href="#projects" className="flex items-center">
+              <Link href="/projects" className="flex items-center">
                 View My Work
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-              </a>
+              </Link>
             </Button>
           </motion.div>
         </motion.div>
