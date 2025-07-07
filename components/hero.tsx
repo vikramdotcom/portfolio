@@ -80,7 +80,7 @@ const HeroSection = () => {
           {/* Status Badge */}
           <motion.div
             variants={itemVariants}
-            className="inline-flex items-center px-4 py-2 rounded-full bg-green-600/20 border border-green-600/30 text-green-300 text-sm font-medium"
+            className="inline-flex items-center px-4 py-2 my-3 rounded-full bg-green-600/20 border border-green-600/30 text-green-300 text-sm font-medium"
           >
             <div className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></div>
             Available for hire
