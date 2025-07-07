@@ -218,6 +218,34 @@ const AboutMe = () => {
                 <p className="text-xs text-gray-400">Ready to start immediately</p>
               </div>
             </div>
+
+            <div className="bg-gradient-to-br from-purple-600/20 to-purple-800/20 backdrop-blur-sm rounded-2xl p-6 border border-purple-600/30">
+              <h3 className="text-lg font-bold mb-4 text-center">View Latest Projects</h3>
+              <div className="space-y-3">
+                <Button asChild className="w-full bg-purple-600 hover:bg-purple-700 text-white">
+                  <a
+                    href="https://www.github.com/vikramdotcom"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2"
+                  >
+                    View my GitHub
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
+                    </svg>
+                  </a>
+                </Button>
+               
+              </div>
+              <div className="mt-4 text-center">
+                <p className="text-xs text-gray-400">Ready to work immediately</p>
+              </div>
+            </div>
           </motion.div>
         </div>
 

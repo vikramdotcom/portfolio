@@ -23,7 +23,7 @@ const socialLinks = [
   {
     name: "GitHub",
     icon: Github,
-    url: "https://github.com/vikram-singh9",
+    url: "https://github.com/vikramdotcom",
     color: "hover:text-gray-400",
     bgColor: "hover:bg-gray-800",
   },

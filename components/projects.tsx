@@ -26,7 +26,7 @@ const projects: Project[] = [
       "A modern e-commerce platform built with Next.js and TypeScript, featuring user authentication, product management, shopping cart, and complete checkout system with responsive design.",
     image: "/images/ecom.jpg?height=400&width=600",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
-    githubLink: "https://github.com/vikram-singh9/Quater02_Full-Stack_Marketplace_Hackathon",
+    githubLink: "https://github.com/vikramdotcom/Quater02_Full-Stack_Marketplace_Hackathon",
     liveLink: "https://hackathone-quater-2.vercel.app/",
     date: "January 2024",
     category: "Full-Stack",
@@ -38,7 +38,7 @@ const projects: Project[] = [
       "A dynamic online T-shirt store where users can browse, customize, and purchase unique T-shirt designs. Built with modern web technologies, the platform features a responsive interface, seamless shopping experience, and easy product management.",
     image: "/images/yugen.png?height=400&width=600",
     technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
-    githubLink: "https://github.com/vikram-singh9/live-tshirts-store",
+    githubLink: "https://github.com/vikramdotcom/live-tshirts-store",
     liveLink: "https://live-tshirts-store.vercel.app/",
     date: "April 2024",
     category: "Web App",
@@ -50,7 +50,7 @@ const projects: Project[] = [
       "An advanced agent application that integrates with OpenAI's API to provide intelligent responses and actions. Built with Python and Chainlit, featuring user authentication for secure access.",
     image: "/images/age.webp?height=400&width=600",
     technologies: ["Python", "Openai api", "chainlit", "Authentication"],
-    githubLink: "https://github.com/vikram-singh9/Advance_Agent",
+    githubLink: "https://github.com/vikramdotcom/Advance_Agent",
     liveLink: "#",
     date: "January 2025",
     category: "Productivity",
@@ -62,7 +62,7 @@ const projects: Project[] = [
       "A responsive web app that allows users to search for anime titles in real time, view detailed information, and discover trending shows. Built with Next.js and TypeScript for a fast and interactive experience.",
     image: "/images/anim.png?height=400&width=600",
     technologies: ["Streamlit", "python"],
-    githubLink: "https://github.com/vikram-singh9/Anime_Explorer_Streamlit",
+    githubLink: "https://github.com/vikramdotcom/Anime_Explorer_Streamlit",
     liveLink: "https://animetracker.streamlit.app/",
     date: "December 2024",
     category: "Interactive",
@@ -74,7 +74,7 @@ const projects: Project[] = [
       "A modern real estate website showcasing properties with advanced search filters, property details, and user-friendly navigation. Built with Next.js and TypeScript for a seamless user experience.",
     image: "/images/apk.png?height=400&width=600",
     technologies: ["html", "css", "javascrpt"],
-    githubLink: "https://github.com/vikram-singh9/apna-ghar-karachi",
+    githubLink: "https://github.com/vikramdotcom/apna-ghar-karachi",
     liveLink: "https://apnagharkarachi.vercel.app/",
     date: "January 2025",
     category: "Productivity",
@@ -86,7 +86,7 @@ const projects: Project[] = [
       "A comprehensive book store app with user authentication, book reviews, wishlist functionality, and order tracking. Features a clean interface for browsing and purchasing books.",
     image: "/images/bs.png?height=400&width=600",
     technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
-    githubLink: "https://github.com/vikram-singh9/Assignment_Books_Store_Crud_Operations",
+    githubLink: "https://github.com/vikramdotcom/Assignment_Books_Store_Crud_Operations",
     liveLink: "https://assignment-books-store-crud-operations.vercel.app/",
     date: "May 2024",
     category: "CRUD App",
@@ -197,7 +197,7 @@ const ProjectsShowcase: React.FC = () => {
           <p className="text-gray-400 mb-6">Want to see more of my work?</p>
           <Button asChild className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3">
             <a
-              href="https://github.com/vikram-singh9"
+              href="https://github.com/vikramdotcom"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2"
