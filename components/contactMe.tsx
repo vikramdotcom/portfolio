@@ -74,7 +74,7 @@ const ContactPage = () => {
 
   if (state.succeeded) {
     return (
-      <div className="bg-zinc-900 min-h-screen flex items-center justify-center p-6">
+      <div className="bg-zinc-900 min-h-screen flex items-center justify-center p-6 hover:border-purple-600/50  transition-all duration-300">
         <Card className="w-full max-w-md mx-auto p-8 bg-zinc-800/50 border border-zinc-700 shadow-2xl">
           <CardContent className="text-center space-y-6">
             <CheckCircle className="w-16 h-16 text-green-400 mx-auto" />
@@ -96,17 +96,17 @@ const ContactPage = () => {
   }
 
   return (
-    <div className="bg-zinc-900 min-h-screen py-16 px-6">
-      <div className="max-w-6xl mx-auto">
+    <div  className="bg-zinc-900 min-h-screen py-16 px-6">
+      <div className="max-w-6xl mx-auto ">
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 ">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Get In Touch</h1>
           <p className="text-gray-400 text-lg">Let's start a conversation and build something amazing together</p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid lg:grid-cols-2 gap-12 items-start ">
           {/* Contact Form */}
-          <Card className="bg-zinc-800/50 border border-zinc-700 shadow-xl">
+          <Card className="bg-zinc-800/50 border border-zinc-700 shadow-xl hover:border-purple-600/50  transition-all duration-300">
             <CardHeader className="text-center pb-6">
               <CardTitle className="text-2xl font-bold text-white">Send a Message</CardTitle>
               <p className="text-gray-400">Fill out the form below and I'll get back to you</p>
@@ -198,7 +198,7 @@ const ContactPage = () => {
           {/* Social Links & Info */}
           <div className="space-y-8">
             {/* Contact Info */}
-            <Card className="bg-zinc-800/50 border border-zinc-700 shadow-xl">
+            <Card className="bg-zinc-800/50 border border-zinc-700 shadow-xl hover:border-purple-600/50  transition-all duration-300">
               <CardHeader>
                 <CardTitle className="text-2xl font-bold text-white">Let's Connect</CardTitle>
                 <p className="text-gray-400">Find me on these platforms</p>
@@ -225,7 +225,7 @@ const ContactPage = () => {
             </Card>
 
             {/* Additional Info */}
-            <Card className="bg-zinc-800/50 border border-zinc-700 shadow-xl">
+            <Card className="bg-zinc-800/50 border border-zinc-700 shadow-xl hover:border-purple-600/50  transition-all duration-300">
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold text-white mb-4">Quick Info</h3>
                 <div className="space-y-3 text-gray-300">

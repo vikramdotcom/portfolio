@@ -1,13 +1,13 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Code2, Sparkles, Download, MapPin, Coffee, Award, Briefcase, Users, Target } from "lucide-react"
+import { Code2, Sparkles, MapPin, Award, Briefcase, Users, Target, Star } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const AboutMe = () => {
   const achievements = [
     { icon: Code2, label: "Projects Completed", value: "30+", color: "text-blue-400" },
-    { icon: Coffee, label: "Coffee Consumed", value: "800+", color: "text-amber-400" },
+    { icon: Star, label: "Followers on Socials", value: "30k+", color: "text-amber-400" },
     { icon: Users, label: "Happy Clients", value: "25+", color: "text-green-400" },
     { icon: Award, label: "Years Experience", value: "2+", color: "text-purple-400" },
   ]
@@ -56,7 +56,7 @@ const AboutMe = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="bg-zinc-800/30 backdrop-blur-sm rounded-2xl p-8 border border-zinc-700/50">
+            <div className="bg-zinc-800/30 backdrop-blur-sm rounded-2xl p-8 border border-zinc-700/50 hover:border-purple-600/50  transition-all duration-300">
               <h2 className="text-3xl font-bold mb-6">
                 Full-Stack Developer <span className="text-purple-600">Seeking New Opportunities</span>
               </h2>
@@ -96,7 +96,7 @@ const AboutMe = () => {
               </div>
 
               {/* Location & Availability */}
-              <div className="flex flex-wrap gap-6 mt-8 pt-6 border-t border-zinc-700">
+              <div className="flex flex-wrap gap-6 mt-8 pt-6 border-t border-zinc-700 hover:border-purple-600/50  transition-all duration-300">
                 <div className="flex items-center text-gray-300">
                   <MapPin className="w-4 h-4 mr-2 text-purple-400" />
                   <span>Pakistan (Open to Remote)</span>
@@ -113,12 +113,12 @@ const AboutMe = () => {
             </div>
 
             {/* Specializations Section */}
-            <div className="bg-zinc-800/30 backdrop-blur-sm rounded-2xl p-8 border border-zinc-700/50">
+            <div className="bg-zinc-800/30 backdrop-blur-sm rounded-2xl p-8 border border-zinc-700/50 hover:border-purple-600/50  transition-all duration-300">
               <h3 className="text-2xl font-bold mb-6 flex items-center">
                 <Sparkles className="w-6 h-6 text-purple-600 mr-3" />
                 Expertise
               </h3>
-              <div className="grid md:grid-cols-2 gap-4">
+              <div  className="grid md:grid-cols-2 gap-4 hover:border-purple-600/50  transition-all duration-300">
                 {specializations.map((spec, index) => (
                   <motion.div
                     key={spec.name}
@@ -146,7 +146,7 @@ const AboutMe = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             {/* Quick Stats */}
-            <div className="bg-zinc-800/30 backdrop-blur-sm rounded-2xl p-6 border border-zinc-700/50">
+            <div className="bg-zinc-800/30 backdrop-blur-sm rounded-2xl p-6 border border-zinc-700/50 hover:border-purple-600/50  transition-all duration-300">
               <h3 className="text-xl font-bold mb-6 text-center">Professional Stats</h3>
               <div className="grid grid-cols-2 gap-4">
                 {achievements.map((achievement, index) => {
@@ -169,7 +169,7 @@ const AboutMe = () => {
             </div>
 
             {/* Education & Certifications */}
-            <div className="bg-zinc-800/30 backdrop-blur-sm rounded-2xl p-6 border border-zinc-700/50">
+            <div className="bg-zinc-800/30 backdrop-blur-sm rounded-2xl p-6 border border-zinc-700/50 hover:border-purple-600/50  transition-all duration-300">
               <h3 className="text-xl font-bold mb-4 flex items-center">
                 <Award className="w-5 h-5 text-purple-600 mr-2" />
                 Education & Certs
@@ -191,7 +191,7 @@ const AboutMe = () => {
             </div>
 
             {/* Call to Action */}
-            <div className="bg-gradient-to-br from-purple-600/20 to-purple-800/20 backdrop-blur-sm rounded-2xl p-6 border border-purple-600/30">
+            <div className="bg-gradient-to-br from-purple-600/20 to-purple-800/20 backdrop-blur-sm rounded-2xl p-6 border border-purple-600/30 hover:border-purple-600/50  transition-all duration-300">
               <h3 className="text-lg font-bold mb-4 text-center">Let's Connect</h3>
               <div className="space-y-3">
                 <Button asChild className="w-full bg-purple-600 hover:bg-purple-700 text-white">
@@ -219,7 +219,7 @@ const AboutMe = () => {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-purple-600/20 to-purple-800/20 backdrop-blur-sm rounded-2xl p-6 border border-purple-600/30">
+            <div className="bg-gradient-to-br from-purple-600/20 to-purple-800/20 backdrop-blur-sm rounded-2xl p-6 border border-purple-600/30 hover:border-purple-600/50  transition-all duration-300">
               <h3 className="text-lg font-bold mb-4 text-center">View Latest Projects</h3>
               <div className="space-y-3">
                 <Button asChild className="w-full bg-purple-600 hover:bg-purple-700 text-white">
@@ -251,12 +251,12 @@ const AboutMe = () => {
 
         {/* Bottom Quote */}
         <motion.div
-          className="text-center"
+          className="text-center "
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
         >
-          <div className="bg-zinc-800/30 backdrop-blur-sm rounded-2xl p-8 border border-zinc-700/50 max-w-3xl mx-auto">
+          <div className="bg-zinc-800/30 backdrop-blur-sm rounded-2xl p-8 border border-zinc-700/50 max-w-3xl mx-auto hover:border-purple-600/50  transition-all duration-300">
             <blockquote className="text-xl md:text-2xl font-light text-gray-300 italic mb-4">
               "Great things are not done by impulse, but by a series of small things brought together."
             </blockquote>

@@ -124,8 +124,8 @@ const HeroSection = () => {
 
           {/* Location */}
           <motion.div variants={itemVariants} className="flex items-center justify-center text-gray-400">
-            <MapPin className="w-4 h-4 mr-2" />
-            <span>Pakistan • Open to Remote Work</span>
+           
+            <span>Open to Remote Work</span>
           </motion.div>
 
           {/* CTA Buttons */}
@@ -133,7 +133,7 @@ const HeroSection = () => {
             variants={itemVariants}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6"
           >
-            <Link href="/images/mycv.pdf" target="_blank" download className="w-full sm:w-auto">
+            <Link href="/images/resume.pdf" target="_blank" download className="w-full sm:w-auto">
             <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-purple-600/25 group">
               <Download className="w-5 h-5 mr-2 group-hover:animate-bounce" />
               Download Resume
