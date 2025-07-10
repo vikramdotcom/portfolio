@@ -136,7 +136,7 @@ const HeroSection = () => {
             <Link href="/images/resume.pdf" target="_blank" download className="w-full sm:w-auto">
             <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-purple-600/25 group">
               <Download className="w-5 h-5 mr-2 group-hover:animate-bounce" />
-              Download Resume
+              Download CV
             </Button>
             </Link>
 
