@@ -96,7 +96,7 @@ const HeroSection = () => {
             </h1>
 
             {/* Animated Role */}
-            <div className="h-16 flex items-center justify-center">
+            <div className="h-9 flex items-center justify-center">
               <motion.h2
                 key={currentRole}
                 initial={{ opacity: 0, y: 20 }}
@@ -113,7 +113,7 @@ const HeroSection = () => {
           {/* Description */}
           <motion.p
             variants={itemVariants}
-            className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed"
+            className="text-md sm:text-lg md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed"
           >
             Passionate about creating <span className="text-purple-400 font-semibold">modern web applications</span>{" "}
             with <span className="text-purple-400 font-semibold">React, Next.js, and TypeScript</span>.
