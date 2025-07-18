@@ -12,7 +12,7 @@ const page = () => {
   return (
     <div>
       <HeroSection/>
-      <AboutMe/>ggcv
+      <AboutMe/>
       <SkillsSection />
       <ProjectsSection/>
       <WorkExperience/>
