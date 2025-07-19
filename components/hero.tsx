@@ -45,7 +45,7 @@ const HeroSection = () => {
     { name: "Twitter", icon: Twitter, href: "https://twitter.com/vikramtechwala", color: "hover:bg-blue-500" },
     { name: "GitHub", icon: Github, href: "https://github.com/vikramdotcom", color: "hover:bg-gray-700" },
     { name: "LinkedIn", icon: Linkedin, href: "https://linkedin.com/in/vikramsinghdev", color: "hover:bg-blue-600" },
-    { name: "Facebook", icon: Facebook, href: "https://facebook.com/in/vikramintech", color: "hover:bg-blue-600" },
+    { name: "Facebook", icon: Facebook, href: "https://facebook.com/in/vikramdotcom", color: "hover:bg-blue-600" },
   ]
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-zinc-900 text-white px-4 sm:px-6 lg:px-8 pt-16">
