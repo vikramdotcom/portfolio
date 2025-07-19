@@ -196,7 +196,7 @@ const ContactPage = () => {
           </Card>
 
           {/* Social Links & Info */}
-          <div className="space-y-8">
+          <div className="space-y-2">
             {/* Contact Info */}
             <Card className="bg-zinc-800/50 border border-zinc-700 shadow-xl hover:border-purple-600/50  transition-all duration-300">
               <CardHeader>
