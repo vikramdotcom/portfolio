@@ -7,6 +7,7 @@ import Form from '@/components/contactMe'
 import SkillsSection from '@/components/skills'
 import WorkExperience from '@/components/experience'
 import Education from '@/components/education'
+import ClientReviews from '@/components/reviews'
 
 const page = () => {
   return (
@@ -15,6 +16,7 @@ const page = () => {
       <AboutMe/>
       <SkillsSection />
       <ProjectsSection/>
+      <ClientReviews/>
       <WorkExperience/>
       <Education/>
       <Form/>

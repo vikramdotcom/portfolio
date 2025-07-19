@@ -186,9 +186,9 @@ const HeroSection = () => {
               className="relative mx-auto w-80 h-80 sm:w-96 sm:h-96 lg:w-[450px] lg:h-[450px]"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-purple-800/20 rounded-full blur-2xl"></div>
-              <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-purple-600/30 shadow-2xl">
+              <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-purple-600/30 shadow-2xl mt-16 sm:mt-0">
                 <Image
-                  src="/images/age.webp"
+                  src="/images/vikram_.png"
                   alt="Vikram Singh - Full-Stack Developer"
                   fill
                   className="object-cover"
@@ -219,7 +219,7 @@ const HeroSection = () => {
             {/* Description Card */}
             <motion.div
               variants={itemVariants}
-              className="absolute -bottom-8 -left-4 sm:-bottom-12 sm:-left-8 bg-zinc-800/90 backdrop-blur-sm border border-zinc-700 rounded-2xl p-6 max-w-sm shadow-xl"
+              className="absolute -bottom-8 -left-4 sm:-bottom-12 sm:-left-8 bg-zinc-800/90 backdrop-blur-sm border border-zinc-700 rounded-2xl p-6 max-w-sm shadow-xl hidden sm:block"
             >
               <p className="text-sm text-gray-300 leading-relaxed mb-4">
                 As a professional web developer, I rely on top-notch tools like React, Next.js, and TypeScript to create
