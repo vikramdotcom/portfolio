@@ -28,10 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>
-        <div className="my-4">
-
+        
         <Navbar/>
-        </div>
+        
         {children}
          <Analytics />
         <Footer/>
