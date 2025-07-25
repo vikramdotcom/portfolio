@@ -42,7 +42,7 @@ const HeroSection = () => {
   }
 
   const socialLinks = [
-    { name: "Twitter", icon: Twitter, href: "https://twitter.com/vikramtechwala", color: "hover:bg-blue-500" },
+    { name: "Twitter", icon: Twitter, href: "https://twitter.com/vikramdotdev", color: "hover:bg-blue-500" },
     { name: "GitHub", icon: Github, href: "https://github.com/vikramdotcom", color: "hover:bg-gray-700" },
     { name: "LinkedIn", icon: Linkedin, href: "https://linkedin.com/in/vikramdotcom", color: "hover:bg-blue-600" },
     { name: "Facebook", icon: Facebook, href: "https://facebook.com/in/vikramdotcom", color: "hover:bg-blue-600" },

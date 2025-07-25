@@ -30,14 +30,14 @@ const socialLinks = [
   {
     name: "LinkedIn",
     icon: Linkedin,
-    url: "https://linkedin.com/in/vikramsinghdev",
+    url: "https://linkedin.com/in/vikramdotcom",
     color: "hover:text-blue-400",
     bgColor: "hover:bg-blue-900/20",
   },
   {
     name: "Twitter",
     icon: Twitter,
-    url: "https://twitter.com/vikramtechwala",
+    url: "https://twitter.com/vikramdotdev",
     color: "hover:text-sky-400",
     bgColor: "hover:bg-sky-900/20",
   },
