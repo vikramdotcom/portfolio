@@ -19,18 +19,18 @@ interface Project {
 }
 
 const projects: Project[] = [
-  {
-    id: "1",
-    title: "Avion Ecommerce Marketplace",
-    description:
-      "A modern e-commerce platform built with Next.js and TypeScript, featuring user authentication, product management, shopping cart, and complete checkout system with responsive design.",
-    image: "/images/ecom.jpg?height=400&width=600",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
-    githubLink: "https://github.com/vikramdotcom/Quater02_Full-Stack_Marketplace_Hackathon",
-    liveLink: "https://hackathone-quater-2.vercel.app/",
-    date: "January 2024",
-    category: "Full-Stack",
-  },
+  // {
+  //   // id: "1",
+  //   // title: "Avion Ecommerce Marketplace",
+  //   // description:
+  //   //   "A modern e-commerce platform built with Next.js and TypeScript, featuring user authentication, product management, shopping cart, and complete checkout system with responsive design.",
+  //   // image: "/images/ecom.jpg?height=400&width=600",
+  //   // technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
+  //   // githubLink: "https://github.com/vikramdotcom/Quater02_Full-Stack_Marketplace_Hackathon",
+  //   // liveLink: "https://hackathone-quater-2.vercel.app/",
+  //   // date: "January 2024",
+  //   // category: "Full-Stack",
+  // },
   {
     id: "2",
     title: "Dynamic T shirts Store",
