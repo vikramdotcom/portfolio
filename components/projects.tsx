@@ -5,6 +5,7 @@ import { Github, ExternalLink, Calendar, Code2 } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import Image from "next/image"
 
 interface Project {
   id: string
@@ -19,18 +20,18 @@ interface Project {
 }
 
 const projects: Project[] = [
-  // {
-  //   // id: "1",
-  //   // title: "Avion Ecommerce Marketplace",
-  //   // description:
-  //   //   "A modern e-commerce platform built with Next.js and TypeScript, featuring user authentication, product management, shopping cart, and complete checkout system with responsive design.",
-  //   // image: "/images/ecom.jpg?height=400&width=600",
-  //   // technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
-  //   // githubLink: "https://github.com/vikramdotcom/Quater02_Full-Stack_Marketplace_Hackathon",
-  //   // liveLink: "https://hackathone-quater-2.vercel.app/",
-  //   // date: "January 2024",
-  //   // category: "Full-Stack",
-  // },
+  {
+    id: "1",
+    title: "Avion Ecommerce Marketplace",
+    description:
+      "A modern e-commerce platform built with Next.js and TypeScript, featuring user authentication, product management, shopping cart, and complete checkout system with responsive design.",
+    image: "/images/ecom.jpg?height=400&width=600",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
+    githubLink: "https://github.com/vikramdotcom/Quater02_Full-Stack_Marketplace_Hackathon",
+    liveLink: "https://hackathone-quater-2.vercel.app/",
+    date: "January 2024",
+    category: "Full-Stack",
+  },
   {
     id: "2",
     title: "Dynamic T shirts Store",
@@ -61,7 +62,7 @@ const projects: Project[] = [
     description:
       "A responsive web app that allows users to search for anime titles in real time, view detailed information, and discover trending shows. Built with Next.js and TypeScript for a fast and interactive experience.",
     image: "/images/anim.png?height=400&width=600",
-    technologies: ["Streamlit", "python"],
+    technologies: ["Streamlit", "Python"],
     githubLink: "https://github.com/vikramdotcom/Anime_Explorer_Streamlit",
     liveLink: "https://animetracker.streamlit.app/",
     date: "December 2024",
@@ -73,7 +74,7 @@ const projects: Project[] = [
     description:
       "A modern real estate website showcasing properties with advanced search filters, property details, and user-friendly navigation. Built with Next.js and TypeScript for a seamless user experience.",
     image: "/images/apk.png?height=400&width=600",
-    technologies: ["html", "css", "javascrpt"],
+    technologies: ["HTML", "CSS", "JavaScript"],
     githubLink: "https://github.com/vikramdotcom/apna-ghar-karachi",
     liveLink: "https://apnagharkarachi.vercel.app/",
     date: "January 2025",
@@ -119,11 +120,13 @@ const ProjectsShowcase: React.FC = () => {
               className="bg-zinc-800/50 border border-zinc-700 hover:border-purple-600/50 transition-all duration-300 hover:shadow-xl group"
             >
               {/* Project Image */}
-              <div className="relative overflow-hidden rounded-t-lg">
-                <img
+              <div className="relative overflow-hidden rounded-t-lg h-48">
+                <Image
                   src={project.image || "/placeholder.svg"}
-                  alt={project.title}
-                  className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                  alt={`${project.title} - ${project.description.substring(0, 100)}`}
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
                 <div className="absolute top-4 left-4">
                   <span className="px-3 py-1 bg-purple-600 text-white text-xs font-medium rounded-full">

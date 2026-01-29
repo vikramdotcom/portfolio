@@ -4,6 +4,7 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { Poppins } from 'next/font/google'
 import { Analytics } from "@vercel/analytics/next"
+import { PersonStructuredData, WebsiteStructuredData } from "@/components/structured-data"
 
 const poppins = Poppins({
   subsets: ['latin'], 
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
     default: "Vikram Singh | Full-Stack Developer & AI Specialist",
     template: "%s | Vikram Singh"
   },
-  description: "Professional Full-Stack Developer and AI Specialist specializing in Next.js, React, TypeScript, and Agentic AI. Available for hire. View my portfolio, projects, and experience.",
+  description: "Professional Full-Stack Developer and AI Specialist specializing in Next.js, React, TypeScript, and Agentic AI. Available for hire. View my portfolio, projects, and experience in web development.",
   keywords: [
     "Vikram Singh",
     "Full-Stack Developer",
@@ -52,13 +53,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://vikrambuilds.site", // Replace with your actual domain
+    url: "https://vikrambuilds.site",
     siteName: "Vikram Singh Portfolio",
     title: "Vikram Singh | Full-Stack Developer & AI Specialist",
     description: "Professional Full-Stack Developer and AI Specialist specializing in Next.js, React, TypeScript, and Agentic AI. Available for hire.",
     images: [
       {
-        url: "/images/vikram_.png", // Your profile image
+        url: "https://vikrambuilds.site/images/vikram_.png",
         width: 1200,
         height: 630,
         alt: "Vikram Singh - Full-Stack Developer",
@@ -70,14 +71,17 @@ export const metadata: Metadata = {
     title: "Vikram Singh | Full-Stack Developer & AI Specialist",
     description: "Professional Full-Stack Developer and AI Specialist. Available for hire.",
     creator: "@vikramdotdev",
-    images: ["/images/vikram_.png"],
+    images: ["https://vikrambuilds.site/images/vikram_.png"],
   },
   icons: {
     icon: "/images/po.jpg",
     shortcut: "/images/po.jpg",
     apple: "/images/po.jpg",
   },
-  metadataBase: new URL("https://vikrambuilds.site"), // Replace with your actual domain
+  metadataBase: new URL("https://vikrambuilds.site"),
+  verification: {
+    google: "your-google-verification-code",
+  },
   alternates: {
     canonical: "/",
   },
@@ -92,6 +96,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <PersonStructuredData />
+        <WebsiteStructuredData />
+      </head>
       <body className={poppins.className}>
         <Navbar/>
         {children}
