@@ -11,15 +11,32 @@ import ClientReviews from '@/components/reviews'
 
 const page = () => {
   return (
-    <div>
-      <HeroSection/>
-      <AboutMe/>
-      <SkillsSection />
-      <ProjectsSection/>
-      <ClientReviews/>
-      <WorkExperience/>
-      <Education/>
-      <Form/>
+    <div className="scroll-smooth">
+      <section id="home">
+        <HeroSection/>
+      </section>
+
+      <section id="about">
+        <AboutMe/>
+      </section>
+
+      <section id="skills">
+        <SkillsSection />
+      </section>
+
+      <section id="projects">
+        <ProjectsSection/>
+      </section>
+
+      <section id="experience">
+        <ClientReviews/>
+        <WorkExperience/>
+        <Education/>
+      </section>
+
+      <section id="contact">
+        <Form/>
+      </section>
     </div>
   )
 }
